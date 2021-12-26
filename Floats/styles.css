@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: lightgreen;
+  height: 40px;
+}
+
+.nav ul {
+  margin-left: 20px;
+  float: right;
+  list-style: none;
+}
+
+.nav ul li {
+  float: left;
+  margin: 5px 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav ul li:hover {
+  background-color: lightgrey;
+}
+
+.clearfix {
+  clear: both;
+}

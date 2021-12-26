@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* color: cyan; */
+}
+
+.main p {
+  color: lightcoral;
+  font-size: 35px;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+}
+
+p,
+h2,
+h3,
+.subheading {
+  color: rgb(58, 58, 58);
+  font-size: 28px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+h6 {
+  position: relative;
+  width: 15%;
+}
+h6::after {
+  content: "2.99$";
+  display: inline-block;
+  background-color: yellow;
+  width: 25px;
+  height: 20px;
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+span {
+  color: red;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+/* 
+h2 {
+  color: rgb(58, 58, 58);
+  font-size: 28px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h3 {
+  color: rgb(58, 58, 58);
+  font-size: 28px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.5;
+} */
+
+#anyname {
+  color: blue;
+}
+
+.subheading {
+  color: darkgrey;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Stronger selector
+1- Inline
+2- ID
+3- class
+4- HTML selector
+5- universal
+
+Weaker */
+
+/* 3 Types of colors: RGB(a) HEX and the named colors */
+/* rgb(0 - 255, 0 - 255, 0 - 255) */
+.coloring-one {
+  background-color: cadetblue;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.inner {
+  background-color: rgb(104, 72, 29, 0.5);
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  /* padding: 40px 20px 10px 50px; */
+  padding: 10px;
+  display: inline-block;
+}
+
+/* .inner-2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+} */
+
+.inner-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.coloring-two {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+ol li:first-child {
+  color: green;
+}
+
+ol li:last-child {
+  color: aqua;
+}
+
+ol li:nth-child(4) {
+  color: brown;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: coral;
+}
+
+a:active {
+  background-color: crimson;
+}
+
+a:visited {
+  background-color: darkolivegreen !important;
+}
+
+a:link {
+  color: darkblue;
+}

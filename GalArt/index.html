@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GalArt</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/genral.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
   </head>
   <body>
     <header class="header">
@@ -122,6 +132,200 @@
           </div>
         </div>
       </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h3 class="subheading">Art gallery</h3>
+          <h2 class="main-heading">Our creativity is addictive</h2>
+        </div>
+
+        <div class="gallery-images">
+          <figure class="gallery-image-item">
+            <img src="images/gallery-1.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-2.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-3.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-4.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-5.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-6.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-7.jpg" alt="An image from our gallery" />
+          </figure>
+          <figure class="gallery-image-item">
+            <img src="images/gallery-8.jpg" alt="An image from our gallery" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <h3 class="subheading">Testimonials</h3>
+          <h2 class="main-heading">Our customers are delighted with our art</h2>
+        </div>
+
+        <div class="testimonial-items">
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              GalArt is just awesome! My wife and I were just moving to our new
+              place and GalArt just gave our home a new dimension!
+            </p>
+            <cite>
+              <img src="./images/customer-1.jpg" alt="John Doe" />
+              <p>John Doe</p>
+            </cite>
+          </div>
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              GalArt provided me with an elite, reasonably priced art work that
+              was customized just for my dining restaurant!
+            </p>
+            <cite>
+              <img src="./images/customer-2.jpg" alt="Adam Joe" />
+              <p>Adam Joe</p>
+            </cite>
+          </div>
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              Trying to be creative and to design your office with art that
+              symbolizes your company's personality was never an easy task.
+              Thankfully, GalArt just did that hustle free.
+            </p>
+            <cite>
+              <img src="./images/customer-3.jpg" alt="Joseph Sparks" />
+              <p>Joseph Sparks</p>
+            </cite>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="container">
+          <h3 class="subheading">Pricing</h3>
+          <h2 class="main-heading">Getting elite art with affordable price</h2>
+        </div>
+
+        <div class="container">
+          <div class="pricing-items">
+            <div class="pricing-header">
+              <h3 class="pricing-header-text">Starting at</h3>
+              <p class="pricing-cost"><span>$</span>99</p>
+              <p class="pricing-size">per sq. ft</p>
+            </div>
+
+            <div class="pricing-list-container">
+              <ul class="pricing-list-includes">
+                <li>
+                  <span class="icon"
+                    ><ion-icon name="checkmark-outline"></ion-icon></span
+                  ><span>Delivery within 10 working days</span>
+                </li>
+                <li>
+                  <span class="icon"
+                    ><ion-icon name="checkmark-outline"></ion-icon></span
+                  ><span>Hustle free</span>
+                </li>
+                <li>
+                  <span class="icon"
+                    ><ion-icon name="checkmark-outline"></ion-icon></span
+                  ><span>Free hanging and placing of the items</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary">Place an order</button>
+            <p class="pricing-taxes">Price include all applicable taxes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe-box">
+          <div class="subscribe-text">
+            <h2>Subscribe for free</h2>
+            <p>
+              Register your email with us for free to get an insight of our
+              latest deals
+            </p>
+          </div>
+          <form action="#" class="subscribe-form">
+            <div class="form-control">
+              <label for="email">Email address</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="me@example.com"
+              />
+            </div>
+            <button class="btn subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-cols">
+          <div class="comp-info-col">
+            <div class="logo">
+              <a href="#">Gal<span>Art</span></a>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <p>Copyright &copy; 2022 by GALART, Inc. All rights reserved.</p>
+          </div>
+          <div class="contact-col">
+            <h5 class="footer-heading">Contact us</h5>
+            <p class="address">
+              721 Mehwar St., 2nd Floor, 6th Of October City, Cairo 12568
+            </p>
+            <p>454-787-87888</p>
+            <p>hello@galart.com</p>
+          </div>
+          <div class="account-col">
+            <h5 class="footer-heading">Account</h5>
+            <p>Create account</p>
+            <p>Sign in</p>
+            <p>iOS app</p>
+            <p>Android app</p>
+          </div>
+          <div class="company-col">
+            <h5 class="footer-heading">Company</h5>
+            <p>About GalArt</p>
+            <p>For Business</p>
+            <p>Designing partners</p>
+            <p>Careers</p>
+          </div>
+          <div class="resource-col">
+            <h5 class="footer-heading">Resources</h5>
+            <p>Help center</p>
+            <p>Privacy & terms</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

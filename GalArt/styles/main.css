@@ -1,0 +1,481 @@
+/*
+
+Primary color: #e67e22
+Secondary color: #ed8058
+
+*/
+
+/*************/
+/**Navigation**/
+/*************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef5f1;
+  padding: 0 4rem;
+  height: 8rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: 700;
+}
+
+.logo a span {
+  color: #e67e22;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #e67e22;
+}
+
+/*************/
+/**Hero Section**/
+/*************/
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fef5f1;
+  padding: 2rem 4rem;
+  height: calc(100vh - 8rem);
+}
+
+.hero-main-text {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.hero-main-text h1 {
+  font-size: 4.8rem;
+  color: rgb(26, 26, 26);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.hero-main-text p {
+  font-size: 2rem;
+}
+
+.hero-buttons {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  margin: 2rem 0;
+}
+
+.hero-buttons button {
+  margin-right: 2rem;
+}
+
+.delivered {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.deliverd-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.deliverd-images img {
+  height: 5rem;
+  width: 4rem;
+  margin-right: -1.5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.delivered-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.delivered-text span {
+  color: #e67e22;
+}
+
+.hero-images-container {
+  display: flex;
+  align-items: end;
+  align-self: center;
+  padding: 1rem;
+}
+
+.hero-images-container img {
+  border-radius: 4px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.53);
+}
+
+.first-hero-image {
+  width: 40rem;
+  height: 26rem;
+  transform: translate3d(8rem, 2rem, 2rem);
+}
+
+.second-hero-image {
+  width: 26rem;
+  height: 36rem;
+}
+
+/*************/
+/**Steps Section**/
+/*************/
+
+.steps {
+  padding: 8rem 0;
+}
+
+.steps-row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 14rem 0;
+}
+
+.steps-img-box {
+  justify-self: center;
+  position: relative;
+}
+
+.steps-img-box::after,
+.steps-img-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.steps-img-box::after {
+  width: 45%;
+  padding: 45%;
+  background-color: #faddd3;
+  z-index: -1;
+}
+
+.steps-img-box::before {
+  width: 60%;
+  padding: 60%;
+  background-color: #fce9e2;
+  z-index: -2;
+}
+
+.steps-img-box img {
+  height: 22rem;
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.steps-text .number {
+  color: #ddd;
+  font-size: 10rem;
+  margin: 1rem 0;
+  letter-spacing: -5px;
+}
+
+.steps-box-heading {
+  color: #333;
+  font-size: 3.2rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.steps-body {
+  color: #777;
+  font-size: 2rem;
+  margin: 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+/*************/
+/**Gallery Section**/
+/*************/
+
+.gallery {
+  background-color: #fef5f1;
+  padding: 8rem 0;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 4rem 0;
+}
+
+.gallery-image-item {
+  overflow: hidden;
+}
+
+.gallery-image-item img {
+  width: 100%;
+  height: 30rem;
+  transition: all 0.3s;
+}
+
+.gallery-image-item img:hover {
+  transform: scale(1.1);
+}
+
+/**********/
+/* Testimonials */
+/**********/
+
+.testimonials {
+  padding: 8rem 0;
+}
+
+.testimonial-items {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+  gap: 2rem;
+  justify-items: space-around;
+}
+
+.testimonial-text {
+  color: #777;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.testimonial-item img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/**********/
+/* Pricing */
+/**********/
+
+.pricing {
+  padding: 8rem 0;
+  background-color: #fef5f1;
+}
+
+.pricing-items {
+  text-align: center;
+}
+
+.pricing-header {
+  margin: 4rem 0;
+}
+
+.pricing-header-text {
+  color: #e67e22;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.pricing-cost {
+  color: #333;
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.pricing-cost span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.pricing-size {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.pricing-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-list-includes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: center;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pricing-list-includes li {
+  margin: 0.5rem 0;
+}
+
+.pricing-list-includes span {
+  color: #555;
+  font-size: 1.6rem;
+  letter-spacing: 1.5;
+}
+.pricing-list-includes .icon {
+  margin-right: 1px;
+  color: #e67e22;
+  font-size: 2.4rem;
+}
+
+.pricing-taxes {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+/**********/
+/* Subscribe */
+/**********/
+
+.subscribe {
+  background-image: linear-gradient(to right, #eda25f, #e67e22);
+  padding: 8rem 4rem;
+}
+
+.subscribe-box {
+  width: 100rem;
+  margin: 0 auto;
+  padding: 5rem 8rem 8rem 8rem;
+  background-image: linear-gradient(to right, #fef5f1, #faddd3);
+  border-radius: 2rem;
+}
+
+.subscribe-text h2 {
+  color: #64350b;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.subscribe-text p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.form-control {
+  align-self: start;
+}
+
+.subscribe-form label {
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+.subscribe-form input {
+  color: #777;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #fff;
+  height: 5rem;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-form button {
+  align-self: end;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: #64350b;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.subscribe-form button:hover {
+  color: #555;
+  background-color: #fff;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+.footer {
+  padding: 10rem 4rem;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #777;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+  justify-content: space-between;
+}
+
+.footer .logo {
+  margin-bottom: 2rem;
+}
+
+.comp-info-col ul {
+  list-style: none;
+  display: flex;
+  justify-items: space-around;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.comp-info-col ul li a {
+  color: #777;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.comp-info-col ul li a:hover {
+  color: #333;
+}
+
+.comp-info-col p {
+  font-size: 1.2rem;
+  width: 75%;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #777;
+}
